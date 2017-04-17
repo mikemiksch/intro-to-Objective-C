@@ -16,6 +16,7 @@
 		834109501EA52F13006D25C5 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 8341094F1EA52F13006D25C5 /* Person.m */; };
 		834109571EA54555006D25C5 /* ViewController+indentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 834109561EA54555006D25C5 /* ViewController+indentifier.m */; };
 		834109611EA5535B006D25C5 /* NSString+ArrayFromStringAndReversal.m in Sources */ = {isa = PBXBuildFile; fileRef = 834109601EA5535B006D25C5 /* NSString+ArrayFromStringAndReversal.m */; };
+		834109661EA55FDB006D25C5 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 834109651EA55FDB006D25C5 /* Employee.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		834109581EA5483D006D25C5 /* ViewControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerDataSource.h; sourceTree = "<group>"; };
 		8341095F1EA5535B006D25C5 /* NSString+ArrayFromStringAndReversal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+ArrayFromStringAndReversal.h"; path = "../NSString+ArrayFromStringAndReversal.h"; sourceTree = "<group>"; };
 		834109601EA5535B006D25C5 /* NSString+ArrayFromStringAndReversal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+ArrayFromStringAndReversal.m"; path = "../NSString+ArrayFromStringAndReversal.m"; sourceTree = "<group>"; };
+		834109641EA55FDB006D25C5 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		834109651EA55FDB006D25C5 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +101,8 @@
 				834109561EA54555006D25C5 /* ViewController+indentifier.m */,
 				8341094E1EA52F13006D25C5 /* Person.h */,
 				8341094F1EA52F13006D25C5 /* Person.m */,
+				834109641EA55FDB006D25C5 /* Employee.h */,
+				834109651EA55FDB006D25C5 /* Employee.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -198,6 +203,7 @@
 				834109501EA52F13006D25C5 /* Person.m in Sources */,
 				834109611EA5535B006D25C5 /* NSString+ArrayFromStringAndReversal.m in Sources */,
 				834109391EA52663006D25C5 /* main.m in Sources */,
+				834109661EA55FDB006D25C5 /* Employee.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
