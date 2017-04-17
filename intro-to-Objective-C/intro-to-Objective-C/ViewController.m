@@ -26,9 +26,11 @@ static int goMoveNumber = 10; //Global variable that is not accessible to any ot
     
     Person *mike = [[Person alloc] init];
     
-    [mike setName:@"Mike"]; //Creates and assigns value to the property
-    
-    NSString *personName = [mike name];
+    [mike setFirstName:@"Mike"]; //Creates and assigns value to the property
+    [mike setLastName:@"Miksch"];
+    [mike setAge:37];
+
+//    NSString *personName = [mike name];
     
     [mike walk]; //Equivalent to "mike.walk" in other languages
     

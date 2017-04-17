@@ -10,7 +10,6 @@
 
 @implementation Person
 
-
 //@property abstracts this all away.
 //NSString *_name; //underlying instance variable
 //
@@ -25,8 +24,8 @@
 //}
 
 -(void)walk{
-    NSString *name = [self name];
-    NSLog(@"%@ is walking...", name);
+    NSString *firstName = [self firstName];
+    NSLog(@"%@ is walking...", firstName);
 }
 
 +(void)sayHello {
