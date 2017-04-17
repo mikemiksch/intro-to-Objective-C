@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "Person.h"
+#import "ViewControllerDataSource.h"
 
-@interface ViewController ()
+static int goMoveNumber = 10; //Global variable that is not accessible to any other file
+
+@interface ViewController () <ViewControllerDataSource>
 
 @end
 
@@ -16,13 +20,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self requiredNumberForEachItem:100];
+    
+    Person *mike = [[Person alloc] init];
+    
+    [mike setName:@"Mike"]; //Creates and assigns value to the property
+    
+    NSString *personName = [mike name];
+    
+    [mike walk]; //Equivalent to "mike.walk" in other languages
+    
+    [Person sayHello]; //Can only be called on the type, not an instance
+    
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)requiredNumberForEachItem:(int)number {
+    
 }
 
 

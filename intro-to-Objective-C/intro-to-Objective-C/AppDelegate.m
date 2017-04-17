@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController+indentifier.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    ViewController *myViewController = [[ViewController alloc]init];
+    NSString *identifier = [myViewController identifier];
+    
     return YES;
 }
 
