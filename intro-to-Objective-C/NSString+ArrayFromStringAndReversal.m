@@ -11,7 +11,22 @@
 @implementation NSString (ArrayFromStringAndReversal)
 
 -(NSArray *)arrayFromString:(NSString *)input {
-    return [input componentsSeparatedByString:@" "];
+    NSArray *newArray = [input componentsSeparatedByString:@" "];
+    NSLog(@"%@", newArray);
+    return newArray;
+}
+
+-(NSMutableString *)reverseString:(NSString *)input {
+    NSMutableString *reversedString = [NSMutableString string];
+    NSInteger characterIndex = [input length];
+    while (characterIndex > 0) {
+        characterIndex--;
+        NSRange subStringRange = NSMakeRange(characterIndex, 1);
+        [reversedString appendString:[input substringWithRange:subStringRange]];
+    }
+    
+    NSLog(@"%@", reversedString);
+    return reversedString;
 }
 
 @end

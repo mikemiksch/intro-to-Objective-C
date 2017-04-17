@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Person.h"
 #import "ViewControllerDataSource.h"
+#import "NSString+ArrayFromStringAndReversal.h"
 
 static int goMoveNumber = 10; //Global variable that is not accessible to any other file
 
@@ -32,6 +33,11 @@ static int goMoveNumber = 10; //Global variable that is not accessible to any ot
     [mike walk]; //Equivalent to "mike.walk" in other languages
     
     [Person sayHello]; //Can only be called on the type, not an instance
+    
+    NSString *testString = @"This string is a test. This is only a test. Had this been a real string, it would have tied something together";
+    
+    [testString arrayFromString:testString];
+    [testString reverseString:testString];
     
 }
 
