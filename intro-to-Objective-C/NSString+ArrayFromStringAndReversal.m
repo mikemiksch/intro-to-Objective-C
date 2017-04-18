@@ -10,19 +10,19 @@
 
 @implementation NSString (ArrayFromStringAndReversal)
 
--(NSArray *)arrayFromString:(NSString *)input {
-    NSArray *newArray = [input componentsSeparatedByString:@" "];
+-(NSArray *)arrayFromString {
+    NSArray *newArray = [self componentsSeparatedByString:@" "];
     NSLog(@"%@", newArray);
     return newArray;
 }
 
--(NSMutableString *)reverseString:(NSString *)input {
+-(NSString *)reverseString {
     NSMutableString *reversedString = [NSMutableString string];
-    NSInteger characterIndex = [input length];
+    NSInteger characterIndex = [self length];
     while (characterIndex > 0) {
         characterIndex--;
         NSRange subStringRange = NSMakeRange(characterIndex, 1);
-        [reversedString appendString:[input substringWithRange:subStringRange]];
+        [reversedString appendString:[self substringWithRange:subStringRange]];
     }
     
     NSLog(@"%@", reversedString);

@@ -10,7 +10,7 @@
 
 @interface NSString (ArrayFromStringAndReversal)
 
--(NSArray *)arrayFromString:(NSString *)input;
--(NSMutableString *)reverseString:(NSString *)input;
+-(NSArray *)arrayFromString;
+-(NSMutableString *)reverseString;
 
 @end
