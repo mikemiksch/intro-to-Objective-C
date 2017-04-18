@@ -10,8 +10,7 @@
 #import "Person.h"
 #import "ViewControllerDataSource.h"
 #import "NSString+ArrayFromStringAndReversal.h"
-#import "EmployeeDatabase.m"
-#import "Employee.h"
+#import "EmployeeDatabase.h"
 
 
 

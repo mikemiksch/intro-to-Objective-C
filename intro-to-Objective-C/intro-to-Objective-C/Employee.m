@@ -6,7 +6,6 @@
 //  Copyright © 2017 Mike Miksch. All rights reserved.
 //
 
-#import "Employee.h"
 #import "EmployeeDatabase.h"
 
 @implementation Employee
@@ -24,7 +23,7 @@
         _employeeNumber = [NSNumber numberWithInt:arc4random_uniform(1000)];
         _email = @"%@%@@email.com", firstName, lastName;
         [EmployeeDatabase.shared add:self];
-    }ß
+    }
     
     return self;
 }
