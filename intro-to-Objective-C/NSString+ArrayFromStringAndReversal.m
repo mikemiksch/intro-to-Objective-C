@@ -10,23 +10,39 @@
 
 @implementation NSString (ArrayFromStringAndReversal)
 
--(NSArray *)arrayFromString:(NSString *)input {
-    NSArray *newArray = [input componentsSeparatedByString:@" "];
+-(NSArray *)arrayFromString {
+    NSArray *newArray = [self componentsSeparatedByString:@" "];
     NSLog(@"%@", newArray);
     return newArray;
 }
 
--(NSMutableString *)reverseString:(NSString *)input {
+-(NSString *)reverseString {
     NSMutableString *reversedString = [NSMutableString string];
-    NSInteger characterIndex = [input length];
+    NSInteger characterIndex = [self length];
     while (characterIndex > 0) {
         characterIndex--;
         NSRange subStringRange = NSMakeRange(characterIndex, 1);
-        [reversedString appendString:[input substringWithRange:subStringRange]];
+        [reversedString appendString:[self substringWithRange:subStringRange]];
     }
     
     NSLog(@"%@", reversedString);
     return reversedString;
+}
+
+
+//Adam's demo
+-(NSString *)reverse:(NSString *)string {
+    NSMutableString *reversed = [[NSMutableString alloc]init];
+    
+    for (int i = 0; i <string.length; i++) {
+        char character = [string characterAtIndex:i];
+        
+        NSString *substring = [NSString stringWithFormat:@"%C", character];
+        
+        [reversed insertString:substring atIndex:0];
+    }
+    
+    return reversed;
 }
 
 @end

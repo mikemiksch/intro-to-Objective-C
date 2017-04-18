@@ -1,5 +1,5 @@
 //
-//  NSString+ArrayFromStringAndReversal.h
+//  PersonQueue.h
 //  intro-to-Objective-C
 //
 //  Created by Mike Miksch on 4/17/17.
@@ -8,9 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (ArrayFromStringAndReversal)
+@protocol PersonQueue <NSObject>
 
--(NSArray *)arrayFromString;
--(NSMutableString *)reverseString;
+@required
+-(void)enqueue:(Person)person;
+
+-(Person)dequeue;
+
+@optional
+-(int)count;
+
 
 @end

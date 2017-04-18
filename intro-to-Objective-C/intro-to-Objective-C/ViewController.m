@@ -38,8 +38,8 @@ static int goMoveNumber = 10; //Global variable that is not accessible to any ot
     
     NSString *testString = @"This string is a test. This is only a test. Had this been a real string, it would have tied something together";
     
-    [testString arrayFromString:testString];
-    [testString reverseString:testString];
+    [testString arrayFromString];
+    [testString reverseString];
     
 }
 

@@ -39,6 +39,7 @@
 		834109601EA5535B006D25C5 /* NSString+ArrayFromStringAndReversal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+ArrayFromStringAndReversal.m"; path = "../NSString+ArrayFromStringAndReversal.m"; sourceTree = "<group>"; };
 		834109641EA55FDB006D25C5 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
 		834109651EA55FDB006D25C5 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		834109671EA563D1006D25C5 /* PersonQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonQueue.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +95,7 @@
 		834109511EA52F25006D25C5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				834109671EA563D1006D25C5 /* PersonQueue.h */,
 				8341095F1EA5535B006D25C5 /* NSString+ArrayFromStringAndReversal.h */,
 				834109601EA5535B006D25C5 /* NSString+ArrayFromStringAndReversal.m */,
 				834109581EA5483D006D25C5 /* ViewControllerDataSource.h */,
