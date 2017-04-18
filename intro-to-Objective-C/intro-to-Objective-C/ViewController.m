@@ -26,6 +26,9 @@
     
     Employee *mike = [[Employee alloc]initWithFirstName:@"Mike" lastName: @"Miksch" age:@37 yearsEmployed:@1 andManagerName:@"Monica"];
     
+    NSLog(@"%@", mike);
+    [EmployeeDatabase.shared add:mike];
+    
     Employee *ben = [[Employee alloc]initWithFirstName:@"Ben" lastName:@"Riceman" age:@30 yearsEmployed:@2 andManagerName:@"Janet"];
     
     Employee *missy = [[Employee alloc]initWithFirstName:@"Missy" lastName:@"Tidd" age:@36 yearsEmployed:@5 andManagerName:@"Todd"];
@@ -33,6 +36,8 @@
     Employee *candy = [[Employee alloc]initWithFirstName:@"Candy" lastName:@"Dawson" age:@40 yearsEmployed:@3 andManagerName:@"Jimbob"];
     
     Employee *tyler = [[Employee alloc]initWithFirstName:@"Tyler" lastName:@"Durden" age:@30 yearsEmployed:@5 andManagerName:@"Richard"];
+    
+    NSLog(@"%@", [EmployeeDatabase.shared allEmployees]);
 }
 
 - (void)requiredNumberForEachItem:(int)number {
@@ -45,9 +50,9 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    Employee *employee = [EmployeeDatabase.shared employeeAtIndex:indexPath];
-    NSString *fullName = @"%@%@", employee.firstName, employee.lastName;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    Employee *selectedEmployee = [EmployeeDatabase.shared employeeAtIndex: indexPath];
+    NSString *fullName = [NSString stringWithFormat:@"%@ %@", selectedEmployee.firstName, selectedEmployee.lastName];
     cell.textLabel.text = fullName;
     return cell;
 }

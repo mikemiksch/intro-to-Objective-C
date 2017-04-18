@@ -28,6 +28,14 @@
     return shared;
 }
 
+-(instancetype)init {
+    self = [super init];
+    if (self) {
+        self.employees = [[NSMutableArray alloc] init];
+    }
+    return self;
+}
+
 -(NSInteger)count{
     return [self.employees count];
 }
@@ -42,6 +50,7 @@
 
 -(void)add:(Employee *)employee{
     [self.employees addObject:employee];
+    NSLog(@"Supposedly added an employee!");
 }
 
 -(void)remove:(Employee *)employee{
