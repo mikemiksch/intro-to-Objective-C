@@ -1,13 +1,13 @@
+////
+////  Lecture work.h
+////  intro-to-Objective-C
+////
+////  Created by Mike Miksch on 4/18/17.
+////  Copyright © 2017 Mike Miksch. All rights reserved.
+////
 //
-//  Lecture work.h
-//  intro-to-Objective-C
+//#import <UIKit/UIKit.h>
 //
-//  Created by Mike Miksch on 4/18/17.
-//  Copyright © 2017 Mike Miksch. All rights reserved.
+//@interface Lecture_work : UIViewController
 //
-
-#import <UIKit/UIKit.h>
-
-@interface Lecture_work : UIViewController
-
-@end
+//@end

@@ -10,7 +10,7 @@
 
 @interface EmployeeDatabase ()
 
-@property(strong, nonatomic) NSArray *employees;
+@property(strong, nonatomic) NSMutableArray *employees;
 
 @end
 
@@ -26,6 +26,34 @@
     });
     
     return shared;
+}
+
+-(NSInteger)count{
+    return [self.employees count];
+}
+
+-(NSArray *)allEmployees{
+    return self.employees;
+}
+
+-(Employee *)employeeAtIndex:(int)index{
+    return [self.employees objectAtIndex:index];
+}
+
+-(void)add:(Employee *)employee{
+    [self.employees addObject:employee];
+}
+
+-(void)remove:(Employee *)employee{
+    [self.employees removeObject:employee];
+}
+
+-(void)removeEmployeeAtIndex:(int)index{
+    [self.employees removeObjectAtIndex:index];
+}
+
+-(void)removeAllEmployees{
+    [self.employees removeAllObjects];
 }
 
 

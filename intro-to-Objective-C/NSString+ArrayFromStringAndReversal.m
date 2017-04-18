@@ -37,7 +37,7 @@
     for (int i = 0; i <string.length; i++) {
         char character = [string characterAtIndex:i];
         
-        NSString *substring = [NSString stringWithFormat:@"%C", character];
+        NSString *substring = [NSString stringWithFormat:@"%c", character];
         
         [reversed insertString:substring atIndex:0];
     }

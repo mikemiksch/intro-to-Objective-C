@@ -7,6 +7,7 @@
 //
 
 #import "Employee.h"
+#import "EmployeeDatabase.h"
 
 @implementation Employee
 
@@ -22,7 +23,8 @@
         _managerName = managerName;
         _employeeNumber = [NSNumber numberWithInt:arc4random_uniform(1000)];
         _email = @"%@%@@email.com", firstName, lastName;
-    }
+        [EmployeeDatabase.shared add:self];
+    }ß
     
     return self;
 }
