@@ -8,23 +8,28 @@
 
 #import "Person.h"
 
-@interface Employee : Person
+@interface Employee : Person <NSCopying>
 
 @property(strong, nonatomic) NSString *managerName;
-@property(assign, nonatomic) int *employeeNumber;
-@property(assign, nonatomic) int *yearsEmployed;
+@property(strong, nonatomic) NSNumber *employeeNumber;
+@property(strong, nonatomic) NSNumber *yearsEmployed;
+@property(strong, nonatomic) NSString *email;
 
--(NSString *)managerName;
+-(instancetype)initWithFirstName:(NSString *)firstName lastName:(NSString *)lastName age:(NSNumber *)age yearsEmployed:(NSNumber *)yearsEmployed andManagerName:(NSString *)managerName;
 
--(int *)yearsEmployed;
 
--(int *)employeeNumber;
-
-//Senders
--(void)setManagerName:(NSString *)managerName;
-
--(void)setEmployeeNumber:(int *)employeeNumber;
-
--(void)setYearsEmployed:(int *)yearsEmployed;
+////Getters
+//-(NSString *)managerName;
+//
+//-(NSNumber *)yearsEmployed;
+//
+//-(NSNumber *)employeeNumber;
+//
+////Setters
+//-(void)setManagerName:(NSString *)managerName;
+//
+//-(void)setEmployeeNumber:(NSNumber *)employeeNumber;
+//
+//-(void)setYearsEmployed:(NSNumber *)yearsEmployed;
 
 @end

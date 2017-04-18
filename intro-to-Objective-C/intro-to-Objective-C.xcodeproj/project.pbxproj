@@ -17,6 +17,8 @@
 		834109571EA54555006D25C5 /* ViewController+indentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 834109561EA54555006D25C5 /* ViewController+indentifier.m */; };
 		834109611EA5535B006D25C5 /* NSString+ArrayFromStringAndReversal.m in Sources */ = {isa = PBXBuildFile; fileRef = 834109601EA5535B006D25C5 /* NSString+ArrayFromStringAndReversal.m */; };
 		834109661EA55FDB006D25C5 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 834109651EA55FDB006D25C5 /* Employee.m */; };
+		8341096A1EA68766006D25C5 /* EmployeeDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 834109691EA68766006D25C5 /* EmployeeDatabase.m */; };
+		8341096D1EA69C23006D25C5 /* Lecture work.m in Sources */ = {isa = PBXBuildFile; fileRef = 8341096C1EA69C23006D25C5 /* Lecture work.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,10 @@
 		834109641EA55FDB006D25C5 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
 		834109651EA55FDB006D25C5 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 		834109671EA563D1006D25C5 /* PersonQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonQueue.h; sourceTree = "<group>"; };
+		834109681EA68766006D25C5 /* EmployeeDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeDatabase.h; sourceTree = "<group>"; };
+		834109691EA68766006D25C5 /* EmployeeDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeDatabase.m; sourceTree = "<group>"; };
+		8341096B1EA69C23006D25C5 /* Lecture work.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Lecture work.h"; sourceTree = "<group>"; };
+		8341096C1EA69C23006D25C5 /* Lecture work.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Lecture work.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,8 @@
 		834109511EA52F25006D25C5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				834109681EA68766006D25C5 /* EmployeeDatabase.h */,
+				834109691EA68766006D25C5 /* EmployeeDatabase.m */,
 				834109671EA563D1006D25C5 /* PersonQueue.h */,
 				8341095F1EA5535B006D25C5 /* NSString+ArrayFromStringAndReversal.h */,
 				834109601EA5535B006D25C5 /* NSString+ArrayFromStringAndReversal.m */,
@@ -123,6 +131,8 @@
 			children = (
 				8341093D1EA52663006D25C5 /* ViewController.h */,
 				8341093E1EA52663006D25C5 /* ViewController.m */,
+				8341096B1EA69C23006D25C5 /* Lecture work.h */,
+				8341096C1EA69C23006D25C5 /* Lecture work.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -201,6 +211,8 @@
 			files = (
 				8341093F1EA52663006D25C5 /* ViewController.m in Sources */,
 				834109571EA54555006D25C5 /* ViewController+indentifier.m in Sources */,
+				8341096D1EA69C23006D25C5 /* Lecture work.m in Sources */,
+				8341096A1EA68766006D25C5 /* EmployeeDatabase.m in Sources */,
 				8341093C1EA52663006D25C5 /* AppDelegate.m in Sources */,
 				834109501EA52F13006D25C5 /* Person.m in Sources */,
 				834109611EA5535B006D25C5 /* NSString+ArrayFromStringAndReversal.m in Sources */,
@@ -364,6 +376,7 @@
 				8341094D1EA52663006D25C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
