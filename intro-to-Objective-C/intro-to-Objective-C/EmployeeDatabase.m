@@ -63,6 +63,7 @@
 
 -(void)add:(Employee *)employee{
     [self.employees addObject:employee];
+    NSLog(@"%@", self.allEmployees);
     [self save];
 }
 

@@ -28,7 +28,7 @@
 }
 
 - (void)viewDidAppear{
-    self.employeesTableView.reloadData;
+    [self.employeesTableView reloadData];
 }
 
 - (IBAction)addEmployeeButtonPressed:(id)sender {
