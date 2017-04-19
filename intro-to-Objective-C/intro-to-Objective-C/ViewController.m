@@ -37,13 +37,15 @@
     Employee *tyler = [[Employee alloc]initWithFirstName:@"Tyler" lastName:@"Durden" age:@30 yearsEmployed:@5 managerName:@"Richard" andEmail:@"tyler@email.com"];
 }
 
-- (void)requiredNumberForEachItem:(int)number {
-    
+
+- (IBAction)addEmployeeButtonPressed:(id)sender {
+    [self performSegueWithIdentifier:@"AddEmployeeViewController" sender:self];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return [EmployeeDatabase.shared count];
 }
+
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     

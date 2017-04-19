@@ -19,6 +19,7 @@
 		834109661EA55FDB006D25C5 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 834109651EA55FDB006D25C5 /* Employee.m */; };
 		8341096A1EA68766006D25C5 /* EmployeeDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 834109691EA68766006D25C5 /* EmployeeDatabase.m */; };
 		8341096D1EA69C23006D25C5 /* Lecture work.m in Sources */ = {isa = PBXBuildFile; fileRef = 8341096C1EA69C23006D25C5 /* Lecture work.m */; };
+		83C4904F1EA7F4850037665E /* AddEmployeeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C4904E1EA7F4850037665E /* AddEmployeeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,8 @@
 		834109691EA68766006D25C5 /* EmployeeDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeDatabase.m; sourceTree = "<group>"; };
 		8341096B1EA69C23006D25C5 /* Lecture work.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Lecture work.h"; sourceTree = "<group>"; };
 		8341096C1EA69C23006D25C5 /* Lecture work.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Lecture work.m"; sourceTree = "<group>"; };
+		83C4904D1EA7F4850037665E /* AddEmployeeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEmployeeViewController.h; sourceTree = "<group>"; };
+		83C4904E1EA7F4850037665E /* AddEmployeeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEmployeeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,8 @@
 				8341093E1EA52663006D25C5 /* ViewController.m */,
 				8341096B1EA69C23006D25C5 /* Lecture work.h */,
 				8341096C1EA69C23006D25C5 /* Lecture work.m */,
+				83C4904D1EA7F4850037665E /* AddEmployeeViewController.h */,
+				83C4904E1EA7F4850037665E /* AddEmployeeViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 			files = (
 				8341093F1EA52663006D25C5 /* ViewController.m in Sources */,
 				834109571EA54555006D25C5 /* ViewController+indentifier.m in Sources */,
+				83C4904F1EA7F4850037665E /* AddEmployeeViewController.m in Sources */,
 				8341096D1EA69C23006D25C5 /* Lecture work.m in Sources */,
 				8341096A1EA68766006D25C5 /* EmployeeDatabase.m in Sources */,
 				8341093C1EA52663006D25C5 /* AppDelegate.m in Sources */,
