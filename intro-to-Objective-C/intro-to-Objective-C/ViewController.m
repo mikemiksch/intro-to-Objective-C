@@ -16,6 +16,8 @@
 
 @interface ViewController () <UITableViewDataSource>
 
+@property (weak, nonatomic) IBOutlet UITableView *employeesTableView;
+
 @end
 
 @implementation ViewController
@@ -33,9 +35,6 @@
     Employee *candy = [[Employee alloc]initWithFirstName:@"Candy" lastName:@"Dawson" age:@40 yearsEmployed:@3 andManagerName:@"Jimbob"];
     
     Employee *tyler = [[Employee alloc]initWithFirstName:@"Tyler" lastName:@"Durden" age:@30 yearsEmployed:@5 andManagerName:@"Richard"];
-    
-    NSLog(@"%@", [EmployeeDatabase.shared allEmployees]);
-    NSLog(@"%ld", [EmployeeDatabase.shared count]);
 }
 
 - (void)requiredNumberForEachItem:(int)number {
