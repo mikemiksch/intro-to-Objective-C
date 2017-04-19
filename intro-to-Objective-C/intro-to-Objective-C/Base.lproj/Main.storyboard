@@ -57,6 +57,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="EmployeesTableView" destination="cS2-t0-xaF" id="IHU-YO-umd"/>
+                        <outlet property="employeesTableView" destination="cS2-t0-xaF" id="mpD-65-HAX"/>
                         <segue destination="qQL-f7-fG2" kind="presentation" identifier="AddEmployeeViewController" id="b4j-mZ-bTo"/>
                     </connections>
                 </viewController>

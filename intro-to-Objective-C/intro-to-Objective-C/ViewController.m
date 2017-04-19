@@ -25,9 +25,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.employeesTableView.dataSource = self;
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleData) name:@"reloadData" object:nil];
 }
 
-- (void)viewDidAppear{
+- (void)handleData{
     [self.employeesTableView reloadData];
 }
 
