@@ -125,6 +125,9 @@
                                 <state key="normal" title="Add Employee">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="addEmployeeButtonPressed:" destination="qQL-f7-fG2" eventType="touchUpInside" id="7yT-hm-XDK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urm-XL-VnO">
                                 <rect key="frame" x="16" y="305" width="343" height="30"/>
@@ -133,10 +136,21 @@
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="cancelButtonPressed:" destination="qQL-f7-fG2" eventType="touchUpInside" id="RXm-Hr-YTl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="ageField" destination="Lc5-yM-AHn" id="Wmk-Yx-YmO"/>
+                        <outlet property="emailField" destination="CF0-vK-fA4" id="mU7-Z0-SPQ"/>
+                        <outlet property="firstNameField" destination="73r-71-JPa" id="ruY-VH-NVD"/>
+                        <outlet property="lastNameField" destination="GdU-tB-Xun" id="Xuv-7R-Rf7"/>
+                        <outlet property="managerNameField" destination="S5Z-g7-R3u" id="FIz-Ny-MBz"/>
+                        <outlet property="yearsEmployedField" destination="jK9-Yl-LhD" id="Dxs-Ek-Xfv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HpE-eP-E35" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
