@@ -12,6 +12,10 @@
 //#import "NSString+ArrayFromStringAndReversal.h"
 //#import "EmployeeDatabase.m"
 //#import "Employee.h"
+
+//#define ALIAS value
+
+
 //static int goMoveNumber = 10; //Global variable that is not accessible to any other file
 //
 //@interface Lecture_work () <ViewControllerDataSource>

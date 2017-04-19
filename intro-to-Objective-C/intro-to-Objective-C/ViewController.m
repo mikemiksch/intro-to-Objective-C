@@ -26,15 +26,15 @@
     [super viewDidLoad];
     self.employeesTableView.dataSource = self;
     
-    Employee *mike = [[Employee alloc]initWithFirstName:@"Mike" lastName: @"Miksch" age:@37 yearsEmployed:@1 andManagerName:@"Monica"];
+    Employee *mike = [[Employee alloc]initWithFirstName:@"Mike" lastName: @"Miksch" age:@37 yearsEmployed:@1 managerName:@"Monica" andEmail:@"mike@email.com"];
     
-    Employee *ben = [[Employee alloc]initWithFirstName:@"Ben" lastName:@"Riceman" age:@30 yearsEmployed:@2 andManagerName:@"Janet"];
+    Employee *ben = [[Employee alloc]initWithFirstName:@"Ben" lastName:@"Riceman" age:@30 yearsEmployed:@2 managerName:@"Janet" andEmail:@"ben@email.com"];
     
-    Employee *missy = [[Employee alloc]initWithFirstName:@"Missy" lastName:@"Tidd" age:@36 yearsEmployed:@5 andManagerName:@"Todd"];
+    Employee *missy = [[Employee alloc]initWithFirstName:@"Missy" lastName:@"Tidd" age:@36 yearsEmployed:@5 managerName:@"Todd" andEmail:@"missy@email.com"];
     
-    Employee *candy = [[Employee alloc]initWithFirstName:@"Candy" lastName:@"Dawson" age:@40 yearsEmployed:@3 andManagerName:@"Jimbob"];
+    Employee *candy = [[Employee alloc]initWithFirstName:@"Candy" lastName:@"Dawson" age:@40 yearsEmployed:@3 managerName:@"Jimbob" andEmail:@"candy@email.com"];
     
-    Employee *tyler = [[Employee alloc]initWithFirstName:@"Tyler" lastName:@"Durden" age:@30 yearsEmployed:@5 andManagerName:@"Richard"];
+    Employee *tyler = [[Employee alloc]initWithFirstName:@"Tyler" lastName:@"Durden" age:@30 yearsEmployed:@5 managerName:@"Richard" andEmail:@"tyler@email.com"];
 }
 
 - (void)requiredNumberForEachItem:(int)number {
