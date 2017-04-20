@@ -19,6 +19,9 @@
     self = [super initWithFirstName:firstName lastName:lastName andAge:age];
     
     if (self) {
+        [yearsEmployed retain];
+        [managerName retain];
+        [email retain];
         _yearsEmployed = yearsEmployed;
         _managerName = managerName;
         _employeeNumber = [NSNumber numberWithInt:arc4random_uniform(1000)];
@@ -31,6 +34,7 @@
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     self = [super init];
     if (self) {
+        [aDecoder retain];
         self.firstName = [aDecoder decodeObjectForKey:@"firstName"];
         self.lastName = [aDecoder decodeObjectForKey:@"lastName"];
         self.age = [aDecoder decodeObjectForKey:@"age"];
@@ -38,11 +42,21 @@
         self.managerName = [aDecoder decodeObjectForKey:@"managerName"];
         self.employeeNumber = [aDecoder decodeObjectForKey:@"employeeNumber"];
         self.email = [aDecoder decodeObjectForKey:@"email"];
+        [aDecoder release];
     }
     return self;
 }
 
+-(void) dealloc {
+    [_yearsEmployed release];
+    [_managerName release];
+    [_employeeNumber release];
+    [_email release];
+    [super dealloc];
+}
+
 - (void)encodeWithCoder:(NSCoder *)aCoder{
+    [aCoder retain];
     [aCoder encodeObject:self.firstName forKey:@"firstName"];
     [aCoder encodeObject:self.lastName forKey:@"lastName"];
     [aCoder encodeObject:self.age forKey:@"age"];
@@ -50,11 +64,12 @@
     [aCoder encodeObject:self.managerName forKey:@"managerName"];
     [aCoder encodeObject:self.employeeNumber forKey:@"employeeNumber"];
     [aCoder encodeObject:self.email forKey:@"email"];
+    [aCoder release];
 }
 
 -(id)copyWithZone:(NSZone *)zone{
     
-    Employee *employee = [super copyWithZone:zone];
+    Employee *employee = [[super copyWithZone:zone]autorelease];
     employee.managerName = self.managerName;
     employee.employeeNumber = self.employeeNumber;
     employee.yearsEmployed = self.yearsEmployed;

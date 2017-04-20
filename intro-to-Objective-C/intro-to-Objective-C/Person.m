@@ -19,13 +19,17 @@
         [lastName retain];
         [age retain];
         _firstName = firstName;
-        [firstName release];
         _lastName = lastName;
-        [lastName release];
         _age = age;
-        [age release];
     }
     return self;
+}
+
+-(void)dealloc{
+    [_firstName release];
+    [_lastName release];
+    [_age release];
+    [super dealloc];
 }
 
 -(void)walk{
