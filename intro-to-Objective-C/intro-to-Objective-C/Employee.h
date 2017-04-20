@@ -17,19 +17,4 @@
 
 -(instancetype)initWithFirstName:(NSString *)firstName lastName:(NSString *)lastName age:(NSNumber *)age yearsEmployed:(NSNumber *)yearsEmployed managerName:(NSString *)managerName andEmail:(NSString *)email;
 
-
-////Getters
-//-(NSString *)managerName;
-//
-//-(NSNumber *)yearsEmployed;
-//
-//-(NSNumber *)employeeNumber;
-//
-////Setters
-//-(void)setManagerName:(NSString *)managerName;
-//
-//-(void)setEmployeeNumber:(NSNumber *)employeeNumber;
-//
-//-(void)setYearsEmployed:(NSNumber *)yearsEmployed;
-
 @end
