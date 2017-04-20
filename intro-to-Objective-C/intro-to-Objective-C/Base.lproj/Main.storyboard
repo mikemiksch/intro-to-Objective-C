@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -77,12 +78,88 @@
                     <view key="view" contentMode="scaleToFill" id="wpJ-kG-EPT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxR-CE-MOy">
+                                <rect key="frame" x="16" y="84" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Jl-ft-eLr">
+                                <rect key="frame" x="16" y="113" width="343" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="9oA-HP-BQ6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manager" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bdb-Lx-sVs">
+                                <rect key="frame" x="16" y="154" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aS-cu-Wc0">
+                                <rect key="frame" x="16" y="183" width="343" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="UHO-hL-ptj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZa-Ig-X6G">
+                                <rect key="frame" x="16" y="224" width="343" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Years Employed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fq2-RW-Yfy">
+                                <rect key="frame" x="16" y="265" width="343" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="xgh-MC-eBf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fq2-RW-Yfy" firstAttribute="top" secondItem="wpJ-kG-EPT" secondAttribute="top" constant="265" id="02g-xd-0IG"/>
+                            <constraint firstItem="DZa-Ig-X6G" firstAttribute="top" secondItem="5aS-cu-Wc0" secondAttribute="bottom" constant="8" symbolic="YES" id="5FU-W6-P3W"/>
+                            <constraint firstItem="fq2-RW-Yfy" firstAttribute="leading" secondItem="6Jl-ft-eLr" secondAttribute="leading" id="8i6-os-1ra"/>
+                            <constraint firstItem="fq2-RW-Yfy" firstAttribute="leading" secondItem="5aS-cu-Wc0" secondAttribute="leading" id="AjC-Sc-WD3"/>
+                            <constraint firstItem="fq2-RW-Yfy" firstAttribute="trailing" secondItem="5aS-cu-Wc0" secondAttribute="trailing" id="CxZ-qB-Ynv"/>
+                            <constraint firstItem="fq2-RW-Yfy" firstAttribute="trailing" secondItem="DZa-Ig-X6G" secondAttribute="trailing" id="Nh4-xa-BZe"/>
+                            <constraint firstItem="fq2-RW-Yfy" firstAttribute="leading" secondItem="DZa-Ig-X6G" secondAttribute="leading" id="PmQ-9I-C7n"/>
+                            <constraint firstItem="Bdb-Lx-sVs" firstAttribute="top" secondItem="6Jl-ft-eLr" secondAttribute="bottom" constant="8" symbolic="YES" id="Ra0-qo-SXx"/>
+                            <constraint firstItem="fq2-RW-Yfy" firstAttribute="trailing" secondItem="Bdb-Lx-sVs" secondAttribute="trailing" id="VZa-le-BEi"/>
+                            <constraint firstItem="6Jl-ft-eLr" firstAttribute="top" secondItem="wpJ-kG-EPT" secondAttribute="top" constant="113" id="Y9n-Od-7PH"/>
+                            <constraint firstItem="jxR-CE-MOy" firstAttribute="leading" secondItem="wpJ-kG-EPT" secondAttribute="leadingMargin" id="aEi-CM-zn7"/>
+                            <constraint firstItem="fq2-RW-Yfy" firstAttribute="trailing" secondItem="6Jl-ft-eLr" secondAttribute="trailing" id="aqm-Dq-CbS"/>
+                            <constraint firstItem="5aS-cu-Wc0" firstAttribute="top" secondItem="wpJ-kG-EPT" secondAttribute="top" constant="183" id="bhH-mi-MvN"/>
+                            <constraint firstItem="jxR-CE-MOy" firstAttribute="trailing" secondItem="wpJ-kG-EPT" secondAttribute="trailingMargin" id="bpS-5K-CSk"/>
+                            <constraint firstItem="fq2-RW-Yfy" firstAttribute="leading" secondItem="jxR-CE-MOy" secondAttribute="leading" id="fzK-P8-J7P"/>
+                            <constraint firstItem="6Jl-ft-eLr" firstAttribute="top" secondItem="jxR-CE-MOy" secondAttribute="bottom" constant="8" symbolic="YES" id="lZz-oX-vkH"/>
+                            <constraint firstItem="fq2-RW-Yfy" firstAttribute="leading" secondItem="Bdb-Lx-sVs" secondAttribute="leading" id="oFQ-8D-c7i"/>
+                            <constraint firstItem="fq2-RW-Yfy" firstAttribute="trailing" secondItem="jxR-CE-MOy" secondAttribute="trailing" id="ukb-lD-lWt"/>
+                            <constraint firstItem="fq2-RW-Yfy" firstAttribute="top" secondItem="DZa-Ig-X6G" secondAttribute="bottom" constant="8" symbolic="YES" id="yxX-tS-jV2"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ageLabel" destination="DZa-Ig-X6G" id="dkZ-3R-6wB"/>
+                        <outlet property="emailLabel" destination="5aS-cu-Wc0" id="81q-D2-iUf"/>
+                        <outlet property="firstNameLabel" destination="jxR-CE-MOy" id="SK8-So-Ehi"/>
+                        <outlet property="lastNameLabel" destination="6Jl-ft-eLr" id="2lo-vZ-7X4"/>
+                        <outlet property="managerNameLabel" destination="Bdb-Lx-sVs" id="JkE-ns-NlH"/>
+                        <outlet property="yearsEmployedLabel" destination="fq2-RW-Yfy" id="flJ-Jx-MRz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eXk-6h-hu4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1987" y="-646"/>
+            <point key="canvasLocation" x="1986.4000000000001" y="-646.32683658170924"/>
         </scene>
         <!--Add Employee View Controller-->
         <scene sceneID="fg4-g6-B89">

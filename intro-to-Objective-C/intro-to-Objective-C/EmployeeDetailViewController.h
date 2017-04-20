@@ -11,7 +11,13 @@
 
 @interface EmployeeDetailViewController : UIViewController
 
-@property (nonatomic, strong) Employee *selectedEmployee;
+@property (weak, nonatomic) IBOutlet UILabel *firstNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *lastNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *managerNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *emailLabel;
+@property (weak, nonatomic) IBOutlet UILabel *ageLabel;
+@property (weak, nonatomic) IBOutlet UILabel *yearsEmployedLabel;
 
+@property (nonatomic, strong) Employee *selectedEmployee;
 
 @end

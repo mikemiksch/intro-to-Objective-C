@@ -63,7 +63,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     [super prepareForSegue:segue sender:sender];
-    if ([segue.identifier  isEqualToString: @"EmployeeDetailViewController.identifier"]) {
+    if ([segue.identifier  isEqualToString: @"EmployeeDetailViewController"]) {
         int selectedIndex = self.employeesTableView.indexPathForSelectedRow.row;
         Employee *selectedEmployee = [EmployeeDatabase.shared employeeAtIndex:selectedIndex];
         EmployeeDetailViewController *destinationController = segue.destinationViewController;

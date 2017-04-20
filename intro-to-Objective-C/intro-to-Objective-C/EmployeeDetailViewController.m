@@ -16,22 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.firstNameLabel.text = [NSString stringWithFormat: @"First Name: %@", [_selectedEmployee firstName]];
+    self.lastNameLabel.text = [NSString stringWithFormat: @"Last Name: %@", [_selectedEmployee lastName]];
+    self.managerNameLabel.text = [NSString stringWithFormat: @"Manager: %@", [_selectedEmployee managerName]];
+    self.emailLabel.text = [NSString stringWithFormat: @"Email: %@", [_selectedEmployee email]];
+    self.ageLabel.text = [NSString stringWithFormat:@"%@ years old.", [_selectedEmployee age]];
+    self.yearsEmployedLabel.text = [NSString stringWithFormat:@"Employed for %@ years.", [_selectedEmployee yearsEmployed]];
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

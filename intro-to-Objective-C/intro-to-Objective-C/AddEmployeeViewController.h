@@ -7,16 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "EmployeeDatabase.h"
 #import "ViewController.h"
 
 @interface AddEmployeeViewController : UIViewController
+
 @property (weak, nonatomic) IBOutlet UITextField *firstNameField;
 @property (weak, nonatomic) IBOutlet UITextField *lastNameField;
 @property (weak, nonatomic) IBOutlet UITextField *managerNameField;
 @property (weak, nonatomic) IBOutlet UITextField *emailField;
 @property (weak, nonatomic) IBOutlet UITextField *ageField;
 @property (weak, nonatomic) IBOutlet UITextField *yearsEmployedField;
+
 @property (nonatomic, strong) ViewController *viewController;
 
 - (IBAction)addEmployeeButtonPressed:(id)sender;
