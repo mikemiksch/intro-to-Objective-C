@@ -7,8 +7,16 @@
 //
 
 #import "ViewController.h"
+#import "Person.h"
+#import "ViewControllerDataSource.h"
+#import "NSString+ArrayFromStringAndReversal.h"
+#import "EmployeeDatabase.h"
 
-@interface ViewController ()
+
+
+@interface ViewController () <UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *employeesTableView;
 
 @end
 
@@ -16,14 +24,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.employeesTableView.dataSource = self;
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleData) name:@"reloadData" object:nil];
+}
+
+- (void)handleData{
+    [self.employeesTableView reloadData];
+}
+
+- (IBAction)addEmployeeButtonPressed:(id)sender {
+    [self performSegueWithIdentifier:@"AddEmployeeViewController" sender:self];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return [EmployeeDatabase.shared count];
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    Employee *selectedEmployee = [EmployeeDatabase.shared employeeAtIndex: indexPath.row];
+    NSString *fullName = [NSString stringWithFormat:@"%@ %@", selectedEmployee.firstName, selectedEmployee.lastName];
+    cell.textLabel.text = fullName;
+    return cell;
 }
-
 
 @end

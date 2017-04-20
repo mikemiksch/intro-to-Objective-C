@@ -13,6 +13,13 @@
 		834109421EA52663006D25C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834109401EA52663006D25C5 /* Main.storyboard */; };
 		834109441EA52663006D25C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834109431EA52663006D25C5 /* Assets.xcassets */; };
 		834109471EA52663006D25C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834109451EA52663006D25C5 /* LaunchScreen.storyboard */; };
+		834109501EA52F13006D25C5 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 8341094F1EA52F13006D25C5 /* Person.m */; };
+		834109571EA54555006D25C5 /* ViewController+indentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 834109561EA54555006D25C5 /* ViewController+indentifier.m */; };
+		834109611EA5535B006D25C5 /* NSString+ArrayFromStringAndReversal.m in Sources */ = {isa = PBXBuildFile; fileRef = 834109601EA5535B006D25C5 /* NSString+ArrayFromStringAndReversal.m */; };
+		834109661EA55FDB006D25C5 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 834109651EA55FDB006D25C5 /* Employee.m */; };
+		8341096A1EA68766006D25C5 /* EmployeeDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 834109691EA68766006D25C5 /* EmployeeDatabase.m */; };
+		8341096D1EA69C23006D25C5 /* Lecture work.m in Sources */ = {isa = PBXBuildFile; fileRef = 8341096C1EA69C23006D25C5 /* Lecture work.m */; };
+		83C4904F1EA7F4850037665E /* AddEmployeeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C4904E1EA7F4850037665E /* AddEmployeeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,22 @@
 		834109431EA52663006D25C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		834109461EA52663006D25C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		834109481EA52663006D25C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8341094E1EA52F13006D25C5 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		8341094F1EA52F13006D25C5 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		834109551EA54555006D25C5 /* ViewController+indentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+indentifier.h"; sourceTree = "<group>"; };
+		834109561EA54555006D25C5 /* ViewController+indentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+indentifier.m"; sourceTree = "<group>"; };
+		834109581EA5483D006D25C5 /* ViewControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerDataSource.h; sourceTree = "<group>"; };
+		8341095F1EA5535B006D25C5 /* NSString+ArrayFromStringAndReversal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+ArrayFromStringAndReversal.h"; path = "../NSString+ArrayFromStringAndReversal.h"; sourceTree = "<group>"; };
+		834109601EA5535B006D25C5 /* NSString+ArrayFromStringAndReversal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+ArrayFromStringAndReversal.m"; path = "../NSString+ArrayFromStringAndReversal.m"; sourceTree = "<group>"; };
+		834109641EA55FDB006D25C5 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		834109651EA55FDB006D25C5 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		834109671EA563D1006D25C5 /* PersonQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonQueue.h; sourceTree = "<group>"; };
+		834109681EA68766006D25C5 /* EmployeeDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeDatabase.h; sourceTree = "<group>"; };
+		834109691EA68766006D25C5 /* EmployeeDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeDatabase.m; sourceTree = "<group>"; };
+		8341096B1EA69C23006D25C5 /* Lecture work.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Lecture work.h"; sourceTree = "<group>"; };
+		8341096C1EA69C23006D25C5 /* Lecture work.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Lecture work.m"; sourceTree = "<group>"; };
+		83C4904D1EA7F4850037665E /* AddEmployeeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEmployeeViewController.h; sourceTree = "<group>"; };
+		83C4904E1EA7F4850037665E /* AddEmployeeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEmployeeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +81,9 @@
 		834109361EA52663006D25C5 /* intro-to-Objective-C */ = {
 			isa = PBXGroup;
 			children = (
-				8341093A1EA52663006D25C5 /* AppDelegate.h */,
-				8341093B1EA52663006D25C5 /* AppDelegate.m */,
-				8341093D1EA52663006D25C5 /* ViewController.h */,
-				8341093E1EA52663006D25C5 /* ViewController.m */,
-				834109401EA52663006D25C5 /* Main.storyboard */,
-				834109431EA52663006D25C5 /* Assets.xcassets */,
-				834109451EA52663006D25C5 /* LaunchScreen.storyboard */,
-				834109481EA52663006D25C5 /* Info.plist */,
+				834109511EA52F25006D25C5 /* Model */,
+				834109521EA52F2C006D25C5 /* View */,
+				834109531EA52F33006D25C5 /* Controller */,
 				834109371EA52663006D25C5 /* Supporting Files */,
 			);
 			path = "intro-to-Objective-C";
@@ -74,9 +92,54 @@
 		834109371EA52663006D25C5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8341093A1EA52663006D25C5 /* AppDelegate.h */,
+				8341093B1EA52663006D25C5 /* AppDelegate.m */,
+				834109431EA52663006D25C5 /* Assets.xcassets */,
+				834109481EA52663006D25C5 /* Info.plist */,
 				834109381EA52663006D25C5 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		834109511EA52F25006D25C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				834109681EA68766006D25C5 /* EmployeeDatabase.h */,
+				834109691EA68766006D25C5 /* EmployeeDatabase.m */,
+				834109671EA563D1006D25C5 /* PersonQueue.h */,
+				8341095F1EA5535B006D25C5 /* NSString+ArrayFromStringAndReversal.h */,
+				834109601EA5535B006D25C5 /* NSString+ArrayFromStringAndReversal.m */,
+				834109581EA5483D006D25C5 /* ViewControllerDataSource.h */,
+				834109551EA54555006D25C5 /* ViewController+indentifier.h */,
+				834109561EA54555006D25C5 /* ViewController+indentifier.m */,
+				8341094E1EA52F13006D25C5 /* Person.h */,
+				8341094F1EA52F13006D25C5 /* Person.m */,
+				834109641EA55FDB006D25C5 /* Employee.h */,
+				834109651EA55FDB006D25C5 /* Employee.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		834109521EA52F2C006D25C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				834109401EA52663006D25C5 /* Main.storyboard */,
+				834109451EA52663006D25C5 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		834109531EA52F33006D25C5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8341093D1EA52663006D25C5 /* ViewController.h */,
+				8341093E1EA52663006D25C5 /* ViewController.m */,
+				8341096B1EA69C23006D25C5 /* Lecture work.h */,
+				8341096C1EA69C23006D25C5 /* Lecture work.m */,
+				83C4904D1EA7F4850037665E /* AddEmployeeViewController.h */,
+				83C4904E1EA7F4850037665E /* AddEmployeeViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,8 +215,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8341093F1EA52663006D25C5 /* ViewController.m in Sources */,
+				834109571EA54555006D25C5 /* ViewController+indentifier.m in Sources */,
+				83C4904F1EA7F4850037665E /* AddEmployeeViewController.m in Sources */,
+				8341096D1EA69C23006D25C5 /* Lecture work.m in Sources */,
+				8341096A1EA68766006D25C5 /* EmployeeDatabase.m in Sources */,
 				8341093C1EA52663006D25C5 /* AppDelegate.m in Sources */,
+				834109501EA52F13006D25C5 /* Person.m in Sources */,
+				834109611EA5535B006D25C5 /* NSString+ArrayFromStringAndReversal.m in Sources */,
 				834109391EA52663006D25C5 /* main.m in Sources */,
+				834109661EA55FDB006D25C5 /* Employee.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +382,7 @@
 				8341094D1EA52663006D25C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
