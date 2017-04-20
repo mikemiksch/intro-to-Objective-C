@@ -64,35 +64,4 @@
     return employee;
 }
 
-//NSString *_managerName;
-//NSNumber *_yearsEmployed;
-//NSNumber *_employeeNumber;
-//
-////Getters
-//-(NSString *)managerName {
-//    return _managerName;
-//}
-//
-//-(NSNumber *)yearsEmployed {
-//    return _yearsEmployed;
-//}
-//
-//-(NSNumber *)employeeNumber {
-//    return _employeeNumber;
-//}
-//
-////Setters
-//-(void)setManagerName:(NSString *)managerName {
-//    _managerName = managerName;
-//}
-//
-//-(void)setEmployeeNumber:(NSNumber *)employeeNumber {
-//    _employeeNumber = employeeNumber;
-//}
-//
-//-(void)setYearsEmployed:(NSNumber *)yearsEmployed {
-//    _yearsEmployed = yearsEmployed;
-//}
-
-
 @end

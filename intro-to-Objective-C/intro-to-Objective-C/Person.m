@@ -10,19 +10,6 @@
 
 @implementation Person
 
-//@property abstracts this all away.
-//NSString *_name; //underlying instance variable
-//
-////Getter
-//-(NSString *)name{
-//    return _name;
-//}
-//
-////Setter
-//-(void)setName:(NSString *)name {
-//    _name = name;
-//}
-
 - (instancetype)initWithFirstName:(NSString *)firstName
                          lastName:(NSString *)lastName
                          andAge:(NSNumber *)age{
