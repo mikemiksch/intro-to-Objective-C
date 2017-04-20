@@ -23,7 +23,6 @@
         _managerName = managerName;
         _employeeNumber = [NSNumber numberWithInt:arc4random_uniform(1000)];
         _email = email;
-        [EmployeeDatabase.shared add:self];
     }
     
     return self;

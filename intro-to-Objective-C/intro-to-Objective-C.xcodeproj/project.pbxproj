@@ -13,10 +13,10 @@
 		834109421EA52663006D25C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834109401EA52663006D25C5 /* Main.storyboard */; };
 		834109441EA52663006D25C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834109431EA52663006D25C5 /* Assets.xcassets */; };
 		834109471EA52663006D25C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834109451EA52663006D25C5 /* LaunchScreen.storyboard */; };
-		834109501EA52F13006D25C5 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 8341094F1EA52F13006D25C5 /* Person.m */; };
+		834109501EA52F13006D25C5 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 8341094F1EA52F13006D25C5 /* Person.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		834109571EA54555006D25C5 /* ViewController+indentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 834109561EA54555006D25C5 /* ViewController+indentifier.m */; };
 		834109611EA5535B006D25C5 /* NSString+ArrayFromStringAndReversal.m in Sources */ = {isa = PBXBuildFile; fileRef = 834109601EA5535B006D25C5 /* NSString+ArrayFromStringAndReversal.m */; };
-		834109661EA55FDB006D25C5 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 834109651EA55FDB006D25C5 /* Employee.m */; };
+		834109661EA55FDB006D25C5 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 834109651EA55FDB006D25C5 /* Employee.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8341096A1EA68766006D25C5 /* EmployeeDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 834109691EA68766006D25C5 /* EmployeeDatabase.m */; };
 		8341096D1EA69C23006D25C5 /* Lecture work.m in Sources */ = {isa = PBXBuildFile; fileRef = 8341096C1EA69C23006D25C5 /* Lecture work.m */; };
 		83C4904F1EA7F4850037665E /* AddEmployeeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C4904E1EA7F4850037665E /* AddEmployeeViewController.m */; };
