@@ -59,11 +59,30 @@
                         <outlet property="EmployeesTableView" destination="cS2-t0-xaF" id="IHU-YO-umd"/>
                         <outlet property="employeesTableView" destination="cS2-t0-xaF" id="mpD-65-HAX"/>
                         <segue destination="qQL-f7-fG2" kind="presentation" identifier="AddEmployeeViewController" id="b4j-mZ-bTo"/>
+                        <segue destination="WUt-JF-VJu" kind="show" identifier="EmployeeDetailViewController" id="jKx-SB-jVd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="972" y="38.23088455772114"/>
+        </scene>
+        <!--Employee Detail View Controller-->
+        <scene sceneID="tQe-HW-Ub8">
+            <objects>
+                <viewController id="WUt-JF-VJu" customClass="EmployeeDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WqJ-AE-QBk"/>
+                        <viewControllerLayoutGuide type="bottom" id="RGA-tI-O4J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wpJ-kG-EPT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eXk-6h-hu4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1987" y="-646"/>
         </scene>
         <!--Add Employee View Controller-->
         <scene sceneID="fg4-g6-B89">

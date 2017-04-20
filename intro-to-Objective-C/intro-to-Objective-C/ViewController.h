@@ -7,6 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Person.h"
+#import "ViewControllerDataSource.h"
+#import "NSString+ArrayFromStringAndReversal.h"
+#import "EmployeeDatabase.h"
+#import "EmployeeDetailViewController.h"
 
 @interface ViewController : UIViewController
 

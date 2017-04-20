@@ -7,11 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "Person.h"
-#import "ViewControllerDataSource.h"
-#import "NSString+ArrayFromStringAndReversal.h"
-#import "EmployeeDatabase.h"
-
 
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -25,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.employeesTableView.dataSource = self;
+    self.employeesTableView.delegate = self;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleData) name:@"reloadData" object:nil];
 }
 
@@ -51,7 +47,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    //Go to employee details
+    [self performSegueWithIdentifier:@"EmployeeDetailViewController" sender:self];
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -65,5 +61,14 @@
     }
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    [super prepareForSegue:segue sender:sender];
+    if ([segue.identifier  isEqualToString: @"EmployeeDetailViewController.identifier"]) {
+        int selectedIndex = self.employeesTableView.indexPathForSelectedRow.row;
+        Employee *selectedEmployee = [EmployeeDatabase.shared employeeAtIndex:selectedIndex];
+        EmployeeDetailViewController *destinationController = segue.destinationViewController;
+        destinationController.selectedEmployee = selectedEmployee;
+    }
+}
 
 @end
