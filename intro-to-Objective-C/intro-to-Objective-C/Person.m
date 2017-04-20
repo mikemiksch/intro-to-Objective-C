@@ -15,16 +15,24 @@
                          andAge:(NSNumber *)age{
     self = [super init];
     if (self) {
+        [firstName retain];
+        [lastName retain];
+        [age retain];
         _firstName = firstName;
+        [firstName release];
         _lastName = lastName;
+        [lastName release];
         _age = age;
+        [age release];
     }
     return self;
 }
 
 -(void)walk{
     NSString *firstName = [self firstName];
+    [firstName retain];
     NSLog(@"%@ is walking...", firstName);
+    [firstName release];
 }
 
 +(void)sayHello {
@@ -32,8 +40,7 @@
 }
 
 -(id)copyWithZone:(NSZone *)zone {
-    Person *person = [[[self class] alloc]init];
-    
+    Person *person = [[[[self class] alloc]init]autorelease];
     
     person.firstName = self.firstName;
     person.lastName = self.lastName;

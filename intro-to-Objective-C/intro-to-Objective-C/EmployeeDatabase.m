@@ -41,12 +41,18 @@
 }
 
 -(void)save{
+    [self willChangeValueForKey:@"employees"];
     BOOL success = [NSKeyedArchiver archiveRootObject:self.employees toFile:self.archiveURL.path];
     if (success) {
         NSLog(@"Saved Employees");
     } else {
         NSLog(@"Save failed :(");
     }
+    [self didChangeValueForKey:@"employees"];
+}
+
++ (BOOL)automaticallyNotifiesObserversOfEmployees{
+    return NO;
 }
 
 -(NSInteger)count{

@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 
+//static void *kvoContext = &kvoContext;
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -21,11 +22,17 @@
     [super viewDidLoad];
     self.employeesTableView.dataSource = self;
     self.employeesTableView.delegate = self;
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleData) name:@"reloadData" object:nil];
+    [[EmployeeDatabase shared] addObserver:self forKeyPath:@"employees" options:NSKeyValueObservingOptionNew | NSKeyValueChangeInsertion context:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleData) name:@"reloadData" object:nil];
 }
 
-- (void)handleData{
-    [self.employeesTableView reloadData];
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+    if ([keyPath isEqual: @"employees"]) {
+        [self.employeesTableView reloadData];
+    } else {
+        [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
+    }
 }
 
 - (IBAction)addEmployeeButtonPressed:(id)sender {
@@ -56,7 +63,7 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [EmployeeDatabase.shared removeEmployeeAtIndex:indexPath.row];
+        [[EmployeeDatabase shared] removeEmployeeAtIndex:indexPath.row];
         [self.employeesTableView reloadData];
     }
 }
@@ -70,5 +77,10 @@
         destinationController.selectedEmployee = selectedEmployee;
     }
 }
+
+//-(void)dealloc
+//{
+//    [[EmployeeDatabase shared] removeObserver:self forKeyPath:@"employees"];
+//}
 
 @end
